@@ -1,537 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>KINZEN FORTUNES LLP | Wealth Creation through Disciplined Investments</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="KINZEN FORTUNES LLP (ARN-355051) - AMFI Registered Mutual Fund Distributor and distributor of multiple financial products including mutual funds, equity, bonds, insurance and alternates. Phone: +91 9579317587, +91 8411891281." />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      color: #1f2933;
-      background-color: #050505;
-    }
-    a { color: inherit; text-decoration: none; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KINZEN FORTUNES LLP | Wealth Creation through Disciplined Investments</title>
+<meta name="description" content="KINZEN FORTUNES LLP (ARN-355051) - AMFI Registered Mutual Fund Distributor offering mutual funds, equity, bonds, PMS, AIFs and insurance solutions.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    /* Top strip with ARN & phones (from Kinzen-arn-and-info) */
-    .top-strip {
-      background:#000000;
-      color:#f9fafb;
-      padding:6px 16px;
-      font-size:0.8rem;
-    }
-    .top-strip-inner {
-      max-width:1100px;
-      margin:0 auto;
-      display:flex;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:space-between;
-      gap:8px;
-    }
-    .top-strip-main {
-      font-weight:500;
-    }
-    .top-strip-sub {
-      font-size:0.75rem;
-      color:#e5e7eb;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#050505;color:#e5e7eb}
+.container{max-width:1200px;margin:auto;padding:20px}
 
-    /* Header with logo */
-    header {
-      background:#050505;
-      color:#ffffff;
-      padding:15px 30px;
-      border-bottom:1px solid #111827;
-      position:sticky;
-      top:0;
-      z-index:10;
-    }
-    .container {
-      max-width:1100px;
-      margin:0 auto;
-      padding:0 20px;
-    }
-    .nav {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-    .logo-wrap {
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .logo-wrap img {
-      height:80px;
-      width:auto;
-      display:block;
-    }
-    .nav-links {
-      display:flex;
-      gap:16px;
-      font-size:0.9rem;
-      color:#e5e7eb;
-    }
-    .nav-links a {
-      padding:4px 0;
-      border-bottom:2px solid transparent;
-    }
-    .nav-links a:hover {
-      border-color:#fbbf24;
-    }
+header{position:sticky;top:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(12px);border-bottom:1px solid #222;z-index:100}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo img{height:55px}
+.nav a{color:#ddd;margin-left:20px;font-size:14px}
 
-    /* Hero */
-    .hero {
-      padding:40px 0 32px;
-      background:radial-gradient(circle at top left,#1f2937 0%,#020617 50%,#000000 100%);
-      color:#f9fafb;
-    }
-    .hero-inner {
-      display:grid;
-      grid-template-columns:minmax(0,2fr) minmax(0,1.5fr);
-      gap:32px;
-      align-items:center;
-    }
-    .hero h1 {
-      font-size:2rem;
-      margin-bottom:10px;
-    }
-    .hero p {
-      font-size:0.98rem;
-      max-width:540px;
-      color:#e5e7eb;
-    }
-    .hero-highlights {
-      margin:16px 0 20px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-    .badge {
-      background:rgba(15,23,42,0.7);
-      padding:6px 10px;
-      border-radius:999px;
-      font-size:0.75rem;
-      border:1px solid rgba(251,191,36,0.4);
-      color:#e5e7eb;
-    }
-    .hero-actions {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:4px;
-    }
-    .btn-primary {
-      background:#fbbf24;
-      color:#111827;
-      border-radius:999px;
-      padding:10px 18px;
-      font-size:0.9rem;
-      font-weight:600;
-      border:none;
-      cursor:pointer;
-    }
-    .btn-outline {
-      border-radius:999px;
-      padding:10px 18px;
-      font-size:0.9rem;
-      border:1px solid #cbd5f5;
-      color:#e5e7ff;
-      background:transparent;
-      cursor:pointer;
-    }
-    .hero-sidebox {
-      background:rgba(15,23,42,0.85);
-      border-radius:16px;
-      padding:16px 18px 14px;
-      border:1px solid rgba(75,85,99,0.8);
-      font-size:0.8rem;
-    }
-    .hero-sidebox h2 {
-      font-size:0.95rem;
-      margin-bottom:8px;
-      color:#fbbf24;
-    }
-    .hero-sidebox ul {
-      list-style:none;
-    }
-    .hero-sidebox li {
-      margin-bottom:6px;
-      color:#e5e7eb;
-    }
+.top-strip{background:#000;color:#ccc;font-size:12px;padding:6px 20px;text-align:center}
 
-    /* Content sections */
-    section {
-      padding:32px 0;
-      background:#050505;
-      color:#e5e7eb;
-    }
-    section:nth-of-type(even) {
-      background:#0b1120;
-    }
-    h2.section-title {
-      font-size:1.3rem;
-      margin-bottom:10px;
-      color:#f9fafb;
-    }
-    .section-subtitle {
-      font-size:0.9rem;
-      color:#9ca3af;
-      margin-bottom:18px;
-    }
-    .two-column {
-      display:grid;
-      grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);
-      gap:20px;
-    }
-    .grid {
-      display:grid;
-      gap:20px;
-    }
-    .grid-3 {
-      grid-template-columns:repeat(3,minmax(0,1fr));
-    }
-    .card {
-      background:#020617;
-      border-radius:12px;
-      padding:16px;
-      border:1px solid #1f2937;
-      box-shadow:0 6px 16px rgba(15,23,42,0.4);
-    }
-    .card-title {
-      font-weight:600;
-      font-size:0.98rem;
-      margin-bottom:4px;
-      color:#f9fafb;
-    }
-    .chip {
-      display:inline-block;
-      font-size:0.68rem;
-      text-transform:uppercase;
-      letter-spacing:0.06em;
-      color:#9ca3af;
-      margin-bottom:4px;
-    }
-    .card p {
-      font-size:0.85rem;
-      color:#d1d5db;
-    }
+.ticker{background:#111;padding:10px;white-space:nowrap;overflow:hidden}
+.ticker span{margin-right:40px;color:#fbbf24}
 
-    /* Contact */
-    .contact-box {
-      background:#020617;
-      border-radius:12px;
-      padding:16px;
-      border:1px solid #1f2937;
-      box-shadow:0 4px 12px rgba(15,23,42,0.45);
-    }
-    .contact-box label {
-      display:block;
-      font-size:0.8rem;
-      margin-bottom:4px;
-      color:#9ca3af;
-    }
-    .contact-box input,
-    .contact-box select,
-    .contact-box textarea {
-      width:100%;
-      padding:8px 10px;
-      border-radius:8px;
-      border:1px solid #4b5563;
-      font-size:0.85rem;
-      margin-bottom:10px;
-      font-family:inherit;
-      background:#020617;
-      color:#e5e7eb;
-    }
-    .contact-note {
-      font-size:0.8rem;
-      color:#9ca3af;
-      margin-top:4px;
-    }
+.hero{padding:90px 20px;background:radial-gradient(circle at top,#1f2937,black)}
+.hero h1{font-size:2.6rem;color:#fff}
+.hero p{color:#9ca3af;margin-top:10px;max-width:550px}
 
-    /* Footer */
-    footer {
-      background:#000000;
-      color:#d1d5db;
-      padding:18px 0 22px;
-      font-size:0.75rem;
-      border-top:1px solid #111827;
-    }
-    .footer-grid {
-      display:grid;
-      grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);
-      gap:16px;
-      margin-bottom:8px;
-    }
-    .footer-title {
-      font-weight:600;
-      margin-bottom:6px;
-      color:#f9fafb;
-    }
-    .footer-disclaimer {
-      font-size:0.72rem;
-      color:#9ca3af;
-    }
+.btn{padding:12px 22px;border-radius:30px;border:none;cursor:pointer;font-weight:600}
+.btn-primary{background:#fbbf24;color:#000}
+.btn-primary:hover{box-shadow:0 0 20px rgba(251,191,36,0.6)}
 
-    @media (max-width:768px){
-      .hero-inner,
-      .two-column,
-      .footer-grid,
-      .grid-3 { grid-template-columns:1fr; }
-      .nav { align-items:flex-start; }
-      .nav-links { font-size:0.8rem; }
-      .hero h1 { font-size:1.5rem; }
-      .logo-wrap img { height:32px; }
-    }
-  </style>
+.section{padding:70px 0}
+.grid{display:grid;gap:20px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);padding:20px;border-radius:16px;backdrop-filter:blur(12px);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
+@media(max-width:768px){.two{grid-template-columns:1fr}}
+
+input,select,textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:8px;border:1px solid #333;background:#020617;color:#fff}
+
+footer{background:#000;padding:30px 0;font-size:12px;color:#888}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px}
+</style>
 </head>
+
 <body>
-  <!-- ARN + phones strip -->
-  <div class="top-strip">
-    <div class="top-strip-inner">
-      <div class="top-strip-main">
-        ARN-355051 | Phone: +91 9579317587, +91 8411891281
-      </div>
-      <div class="top-strip-sub">
-        AMFI Registered Mutual Fund Distributor · Mutual fund investments are subject to market risks, read all scheme related documents carefully.
-      </div>
-    </div>
-  </div>
 
-  <!-- Header with logo -->
-  <header>
-    <div class="container nav">
-      <div class="logo-wrap">
-        <!-- ensure logo.png is in same folder -->
-        <img src="logo.png" alt="KINZEN FORTUNES LLP logo" />
-      </div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#solutions">Offerings</a>
-        <a href="#process">Approach</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<div class="top-strip">
+ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund Distributor · Mutual fund investments are subject to market risks, read all scheme related documents carefully.
+</div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <h1>Disciplined, research‑driven wealth creation</h1>
-        <p>
-          KINZEN FORTUNES LLP helps investors build sustainable wealth through mutual funds, equity, bonds, alternates and insurance – guided by fiduciary responsibility, transparency and long‑term focus.
-        </p>
-        <div class="hero-highlights">
-          <span class="badge">Founded 2025</span>
-          <span class="badge">ARN‑355051 · AMFI Registered MFD</span>
-          <span class="badge">Franchise partner – Motilal Oswal Financial Services Ltd.</span>
-        </div>
-        <div class="hero-actions">
-          <a href="#contact"><button class="btn-primary">Request a call back</button></a>
-          <a href="#process"><button class="btn-outline">View our approach</button></a>
-        </div>
-      </div>
-      <aside class="hero-sidebox">
-        <h2>Important investor information</h2>
-        <ul>
-          <li>We act as distributors / intermediaries for financial products. We do not offer guaranteed or assured returns on any product.</li>
-          <li>Mutual fund and securities investments are subject to market risks. Investors should read all scheme related documents carefully before investing.</li>
-          <li>We do not send unsolicited stock tips or SMS recommendations and operate strictly within SEBI, AMFI and other applicable guidelines.</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
+<header>
+<div class="container nav">
+<div class="logo"><img src="logo.png" alt="Kinzen Logo"></div>
+<div>
+<a href="#about">About</a>
+<a href="#solutions">Offerings</a>
+<a href="#process">Approach</a>
+<a href="#calculator">Calculator</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</header>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About KINZEN FORTUNES LLP</h2>
-      <p class="section-subtitle">
-        A fiduciary‑driven financial services firm focused on creating long‑term wealth with research‑backed strategies and ethical practices.
-      </p>
-      <div class="two-column">
-        <div>
-          <p style="font-size:0.9rem; color:#e5e7eb; margin-bottom:10px;">
-            KINZEN FORTUNES LLP is dedicated to generating sustainable wealth for investors by leveraging financial expertise, advanced market insights and disciplined investment strategies. Founded in 2025, the firm operates with a strong fiduciary responsibility, keeping investor interest above everything else.
-          </p>
-          <p style="font-size:0.9rem; color:#e5e7eb; margin-bottom:10px;">
-            Our mission is to generate consistent alpha over market benchmarks by strategically investing across mutual funds, equity, portfolio management services (PMS), alternative investment funds (AIFs), bonds and insurance solutions.
-          </p>
-          <p style="font-size:0.85rem; color:#9ca3af;">
-            Partners: Yugandhar Nagdeve (NISM Series VIII, technical analyst), Abhishek Bhonde (NISM Series V‑A, Financial Valuation & Risk Management – Columbia University), and Dr. Mahendra Nagdeve (Ph.D. IIT Kharagpur, over 36 years of academic and leadership experience) bring analytical depth, client understanding and strategic guidance to the firm.
-          </p>
-        </div>
-        <div class="card">
-          <div class="chip">Our niche</div>
-          <div class="card-title">Unlocking the power of mutual funds & bonds</div>
-          <p>
-            We specialise in using mutual funds, SIPs and high‑quality fixed‑income instruments as core building blocks of long‑term portfolios – combining diversification, professional management and compounding to create wealth over cycles.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="ticker">
+<span>NIFTY 50 ▲ 22,000</span>
+<span>SENSEX ▲ 73,000</span>
+<span>10Y Bond 7.1%</span>
+</div>
 
-  <!-- Offerings -->
-  <section id="solutions">
-    <div class="container">
-      <h2 class="section-title">Our offerings</h2>
-      <p class="section-subtitle">
-        A comprehensive suite of financial solutions tailored to diverse investor needs.
-      </p>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="chip">Mutual funds</div>
-          <div class="card-title">Strategic asset allocation & SIPs</div>
-          <p>Goal‑based portfolios using diversified mutual funds, focusing on long‑term compounding rather than short‑term speculation.</p>
-        </div>
-        <div class="card">
-          <div class="chip">Equity</div>
-          <div class="card-title">Data‑driven equity analysis</div>
-          <p>Research‑oriented approach to identify opportunities in listed equities, supported by technical and fundamental perspectives.</p>
-        </div>
-        <div class="card">
-          <div class="chip">PMS</div>
-          <div class="card-title">Portfolio Management Services</div>
-          <p>Customised PMS solutions for high‑net‑worth investors seeking focused strategies and professional portfolio oversight.</p>
-        </div>
-        <div class="card">
-          <div class="chip">AIFs</div>
-          <div class="card-title">Alternative Investment Funds</div>
-          <p>Access to curated alternate strategies, subject to eligibility, suitability and regulatory norms.</p>
-        </div>
-        <div class="card">
-          <div class="chip">Bonds & fixed‑income</div>
-          <div class="card-title">Income & stability</div>
-          <p>Exposure to bonds and other fixed‑income instruments aimed at balancing risk, return and liquidity in the portfolio.</p>
-        </div>
-        <div class="card">
-          <div class="chip">Insurance & demat</div>
-          <div class="card-title">Protection & convenience</div>
-          <p>Insurance solutions to manage financial risks and dematerialisation services to simplify and digitise investments.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+<div class="container">
+<h1>Helping you grow wealth through disciplined investing</h1>
+<p>KINZEN FORTUNES LLP helps investors build sustainable wealth through mutual funds, equity, bonds, PMS, AIFs and insurance solutions with a fiduciary and research-driven approach.</p>
+<br>
+<button class="btn btn-primary">Get Free Portfolio Review</button>
+</div>
+</section>
 
-  <!-- Approach -->
-  <section id="process">
-    <div class="container">
-      <h2 class="section-title">Our approach</h2>
-      <p class="section-subtitle">
-        A structured, transparent and repeatable process designed to keep investors informed and aligned with their goals.
-      </p>
-      <div class="two-column">
-        <div>
-          <ol style="font-size:0.85rem; color:#e5e7eb; padding-left:18px;">
-            <li style="margin-bottom:6px;"><strong>Understand your profile</strong> – map goals, timelines, risk appetite and existing holdings.</li>
-            <li style="margin-bottom:6px;"><strong>Design allocations</strong> – discuss suitable categories (MFs, equity, bonds, alternates, insurance) with clear explanation of risks and costs.</li>
-            <li style="margin-bottom:6px;"><strong>Implement through regulated platforms</strong> – execute via Motilal Oswal and other regulated entities, completing KYC and documentation.</li>
-            <li style="margin-bottom:6px;"><strong>Review & support</strong> – periodic reviews and ongoing service for redemptions, switches, claims and queries.</li>
-          </ol>
-        </div>
-        <div class="card">
-          <div class="card-title">Risk & regulatory note</div>
-          <p style="font-size:0.8rem;">
-            The information on this website is for general information and investor education only and should not be construed as a recommendation or an offer to buy or sell any securities or financial products. Investors should carefully review all official documents issued by product manufacturers and consult their own advisors before making any investment decisions.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="about" class="section">
+<div class="container">
+<h2>About KINZEN FORTUNES LLP</h2>
+<p>KINZEN FORTUNES LLP is dedicated to generating sustainable wealth for investors by leveraging financial expertise, advanced market insights and disciplined investment strategies. Founded in 2025, the firm operates with a strong fiduciary responsibility, keeping investor interest above everything else.</p>
+</div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Connect with KINZEN FORTUNES LLP</h2>
-      <p class="section-subtitle">
-        Share a few details and the team will connect to understand your requirements. No execution is carried out without explicit client consent.
-      </p>
-      <div class="two-column">
-        <div class="contact-box">
-          <form>
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" />
+<section id="solutions" class="section">
+<div class="container">
+<h2>Our Offerings</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Mutual Funds</h3></div>
+<div class="card"><h3>Equity</h3></div>
+<div class="card"><h3>PMS & AIFs</h3></div>
+<div class="card"><h3>Bonds</h3></div>
+<div class="card"><h3>Insurance</h3></div>
+<div class="card"><h3>Demat Services</h3></div>
+</div>
+</div>
+</section>
 
-            <label for="phone">Mobile number</label>
-            <input id="phone" name="phone" type="tel" placeholder="+91-" />
+<section id="process" class="section">
+<div class="container">
+<h2>Our Approach</h2>
+<p>Understand → Design → Execute → Review. A structured and transparent process aligned with investor goals and regulatory standards.</p>
+</div>
+</section>
 
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" />
+<section id="calculator" class="section">
+<div class="container">
+<h2>SIP Calculator</h2>
+<input id="amount" placeholder="Monthly Investment">
+<input id="rate" placeholder="Expected Return %">
+<input id="years" placeholder="Years">
+<button class="btn btn-primary" onclick="calc()">Calculate</button>
+<h3 id="result"></h3>
+</div>
+</section>
 
-            <label for="city">City</label>
-            <input id="city" name="city" type="text" placeholder="Pune / Pimpri / Other" />
+<section id="contact" class="section">
+<div class="container two">
+<div>
+<h2>Connect with Us</h2>
+<form onsubmit="send();return false;">
+<input id="name" placeholder="Full Name">
+<input id="phone" placeholder="Mobile Number">
+<input id="email" placeholder="Email Address">
+<button class="btn btn-primary">Submit</button>
+</form>
+</div>
+<div class="card">
+<h3>Head Office</h3>
+<p>KINZEN FORTUNES LLP<br>
+A 904, Eva, Bavdhan,<br>
+Pune 411021, Maharashtra, India.<br><br>
+Phone: +91 9579317587, +91 8411891281<br>
+Email: info@kinzenfortunes.com</p>
+</div>
+</div>
+</section>
 
-            <label for="interest">Area of interest</label>
-            <select id="interest" name="interest">
-              <option value="">Select</option>
-              <option>Mutual Funds</option>
-              <option>Equity / Trading</option>
-              <option>PMS / AIFs</option>
-              <option>Bonds / Fixed income</option>
-              <option>Insurance</option>
-              <option>Comprehensive planning</option>
-            </select>
+<footer>
+<div class="container">
+<p>KINZEN FORTUNES LLP acts as a distributor / intermediary for financial products, including mutual funds as an AMFI Registered Mutual Fund Distributor (ARN-355051). Investments in securities and mutual funds are subject to market risks. Investors should read all scheme related documents carefully before investing. Past performance is not indicative of future results. No guaranteed returns are offered.</p>
+</div>
+</footer>
 
-            <label for="message">Brief requirement (optional)</label>
-            <textarea id="message" name="message" rows="3" placeholder="Share goals, timelines or specific queries"></textarea>
+<a class="whatsapp" href="https://wa.me/919579317587">WhatsApp</a>
 
-            <button type="submit" class="btn-primary" style="margin-top:4px;">Submit enquiry</button>
-            <p class="contact-note">
-              By submitting this form, you authorise KINZEN FORTUNES LLP to contact you via phone, SMS, email or WhatsApp for information on financial products and related services.
-            </p>
-          </form>
-        </div>
-        <div>
-          <div class="card" style="margin-bottom:10px;">
-            <div class="card-title">Headquarters</div>
-            <p style="font-size:0.85rem; color:#d1d5db;">
-              KINZEN FORTUNES LLP<br/>
-              A 904, Eva, Bavdhan,<br/>
-              Pune 411021, Maharashtra, India.<br/><br/>
-              Phone: +91 9579317587, +91 8411891281<br/>
-              Email: info@kinzenfortunes.com
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<script>
+function calc(){
+let p=amount.value;
+let r=rate.value/100/12;
+let n=years.value*12;
+let fv=p*((Math.pow(1+r,n)-1)/r)*(1+r);
+result.innerHTML="Future Value: ₹"+Math.round(fv);
+}
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-title">Regulatory & product disclosures</div>
-          <p class="footer-disclaimer">
-            KINZEN FORTUNES LLP acts as a distributor / intermediary for financial products, including mutual funds as an AMFI Registered Mutual Fund Distributor (ARN‑355051), and as a franchise partner of Motilal Oswal Financial Services Ltd. All transactions are subject to the terms, conditions and risk factors specified by the respective product manufacturers, exchanges and regulators.
-          </p>
-        </div>
-        <div>
-          <div class="footer-title">Risk disclaimer</div>
-          <p class="footer-disclaimer">
-            Investments in securities, mutual funds and market‑linked products are subject to market risks. Mutual fund investments are subject to market risks; investors should read all scheme related documents carefully before investing. Past performance is not indicative of future results. Insurance is a subject matter of solicitation. No guaranteed or assured returns are offered by KINZEN FORTUNES LLP.
-          </p>
-        </div>
-      </div>
-      <p class="footer-disclaimer">
-        The content on this website is for informational and educational purposes only and should not be construed as investment, tax or legal advice or as a recommendation to buy or sell any securities or products. Visitors should independently evaluate any product and consult their own advisors before making investment decisions.
-      </p>
-      <p class="footer-disclaimer" style="margin-top:6px;">
-        © <span id="year"></span> KINZEN FORTUNES LLP. All rights reserved.
-      </p>
-    </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </footer>
+function send(){
+let name=name.value;
+let phone=phone.value;
+window.open(`https://wa.me/919579317587?text=Name:${name} Phone:${phone}`);
+}
+</script>
+
 </body>
 </html>
