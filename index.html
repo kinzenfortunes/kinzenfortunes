@@ -4,45 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KINZEN FORTUNES LLP | Wealth Creation through Disciplined Investments</title>
-<meta name="description" content="KINZEN FORTUNES LLP (ARN-355051) - AMFI Registered Mutual Fund Distributor offering mutual funds, equity, bonds, PMS, AIFs and insurance solutions.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;background:#050505;color:#e5e7eb}
 .container{max-width:1200px;margin:auto;padding:20px}
-
 header{position:sticky;top:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(12px);border-bottom:1px solid #222;z-index:100}
 .nav{display:flex;justify-content:space-between;align-items:center}
 .logo img{height:55px}
 .nav a{color:#ddd;margin-left:20px;font-size:14px}
-
 .top-strip{background:#000;color:#ccc;font-size:12px;padding:6px 20px;text-align:center}
-
-.ticker{background:#111;padding:10px;white-space:nowrap;overflow:hidden}
-.ticker span{margin-right:40px;color:#fbbf24}
-
+.market{text-align:center;padding:25px}
+.market span{margin:8px 12px;display:inline-block;font-weight:600}
+.green{color:#22c55e}
+.red{color:#ef4444}
 .hero{padding:90px 20px;background:radial-gradient(circle at top,#1f2937,black)}
 .hero h1{font-size:2.6rem;color:#fff}
-.hero p{color:#9ca3af;margin-top:10px;max-width:550px}
-
+.hero p{color:#9ca3af;margin-top:10px;max-width:600px}
 .btn{padding:12px 22px;border-radius:30px;border:none;cursor:pointer;font-weight:600}
 .btn-primary{background:#fbbf24;color:#000}
-.btn-primary:hover{box-shadow:0 0 20px rgba(251,191,36,0.6)}
-
 .section{padding:70px 0}
 .grid{display:grid;gap:20px}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);padding:20px;border-radius:16px;backdrop-filter:blur(12px);transition:.3s}
-.card:hover{transform:translateY(-6px)}
-
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);padding:20px;border-radius:16px}
 .two{display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
 @media(max-width:768px){.two{grid-template-columns:1fr}}
-
-input,select,textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:8px;border:1px solid #333;background:#020617;color:#fff}
-
+input{width:100%;padding:10px;margin-bottom:10px;border-radius:8px;border:1px solid #333;background:#020617;color:#fff}
 footer{background:#000;padding:30px 0;font-size:12px;color:#888}
-
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px}
 </style>
 </head>
@@ -50,32 +39,30 @@ footer{background:#000;padding:30px 0;font-size:12px;color:#888}
 <body>
 
 <div class="top-strip">
-ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund Distributor · Mutual fund investments are subject to market risks, read all scheme related documents carefully.
+ARN-355051 | AMFI Registered Mutual Fund Distributor | Mutual fund investments are subject to market risks
 </div>
 
 <header>
 <div class="container nav">
-<div class="logo"><img src="logo.png" alt="Kinzen Logo"></div>
+<div class="logo"><img src="logo.png"></div>
 <div>
 <a href="#about">About</a>
 <a href="#solutions">Offerings</a>
 <a href="#process">Approach</a>
-<a href="#calculator">Calculator</a>
 <a href="#contact">Contact</a>
 </div>
 </div>
 </header>
 
-<div class="ticker">
-<span>NIFTY 50 ▲ 22,000</span>
-<span>SENSEX ▲ 73,000</span>
-<span>10Y Bond 7.1%</span>
-</div>
+<section class="market">
+<h3>Live Market Snapshot (Auto updates every 10 sec)</h3>
+<div id="marketData">Loading live data...</div>
+</section>
 
 <section class="hero">
 <div class="container">
 <h1>Helping you grow wealth through disciplined investing</h1>
-<p>KINZEN FORTUNES LLP helps investors build sustainable wealth through mutual funds, equity, bonds, PMS, AIFs and insurance solutions with a fiduciary and research-driven approach.</p>
+<p>Partnered with Motilal Oswal Financial Services & Wealthy. We combine research, discipline and long-term thinking to help investors build meaningful wealth.</p>
 <br>
 <button class="btn btn-primary">Get Free Portfolio Review</button>
 </div>
@@ -84,7 +71,21 @@ ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund
 <section id="about" class="section">
 <div class="container">
 <h2>About KINZEN FORTUNES LLP</h2>
-<p>KINZEN FORTUNES LLP is dedicated to generating sustainable wealth for investors by leveraging financial expertise, advanced market insights and disciplined investment strategies. Founded in 2025, the firm operates with a strong fiduciary responsibility, keeping investor interest above everything else.</p>
+<p>
+KINZEN FORTUNES LLP is built on a simple philosophy — wealth creation is not about chasing returns, but about staying disciplined, managing risk, and allowing compounding to work over time.
+</p>
+<p>
+We work closely with investors to understand their real-life goals — whether it’s buying a home, securing retirement, funding children’s education, or simply building financial independence. Every recommendation is aligned to these goals rather than short-term market noise.
+</p>
+<p>
+As an AMFI Registered Mutual Fund Distributor (ARN-355051), we act as intermediaries and provide access to a wide range of financial products including mutual funds, equities, bonds, PMS, AIFs and insurance solutions. We do not promise guaranteed returns — instead, we focus on transparency, suitability, and long-term consistency.
+</p>
+<p>
+<b>Directors:</b><br>
+Yugandhar Nagdeve – Technical analysis & market strategy<br>
+Abhishek Bhonde – Financial planning & client advisory<br>
+Dr. Mahendra Nagdeve – Strategic guidance & long-term vision
+</p>
 </div>
 </section>
 
@@ -92,12 +93,12 @@ ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund
 <div class="container">
 <h2>Our Offerings</h2>
 <div class="grid grid-3">
-<div class="card"><h3>Mutual Funds</h3></div>
-<div class="card"><h3>Equity</h3></div>
-<div class="card"><h3>PMS & AIFs</h3></div>
-<div class="card"><h3>Bonds</h3></div>
-<div class="card"><h3>Insurance</h3></div>
-<div class="card"><h3>Demat Services</h3></div>
+<div class="card">Mutual Funds</div>
+<div class="card">Equity</div>
+<div class="card">PMS & AIFs</div>
+<div class="card">Bonds</div>
+<div class="card">Insurance</div>
+<div class="card">Demat</div>
 </div>
 </div>
 </section>
@@ -105,29 +106,24 @@ ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund
 <section id="process" class="section">
 <div class="container">
 <h2>Our Approach</h2>
-<p>Understand → Design → Execute → Review. A structured and transparent process aligned with investor goals and regulatory standards.</p>
-</div>
-</section>
-
-<section id="calculator" class="section">
-<div class="container">
-<h2>SIP Calculator</h2>
-<input id="amount" placeholder="Monthly Investment">
-<input id="rate" placeholder="Expected Return %">
-<input id="years" placeholder="Years">
-<button class="btn btn-primary" onclick="calc()">Calculate</button>
-<h3 id="result"></h3>
+<p>
+1. Deep understanding of client goals, income, liabilities and risk appetite.<br>
+2. Constructing diversified portfolios across asset classes.<br>
+3. Execution through regulated partners like Motilal Oswal.<br>
+4. Continuous tracking of market movements and portfolio performance.<br>
+5. Periodic reviews, rebalancing and lifecycle-based adjustments.<br>
+6. Ongoing support for transactions, claims, switches and queries.
+</p>
 </div>
 </section>
 
 <section id="contact" class="section">
 <div class="container two">
 <div>
-<h2>Connect with Us</h2>
+<h2>Contact</h2>
 <form onsubmit="send();return false;">
-<input id="name" placeholder="Full Name">
-<input id="phone" placeholder="Mobile Number">
-<input id="email" placeholder="Email Address">
+<input id="name" placeholder="Name">
+<input id="phone" placeholder="Phone">
 <button class="btn btn-primary">Submit</button>
 </form>
 </div>
@@ -135,8 +131,7 @@ ARN-355051 | Phone: +91 9579317587, +91 8411891281 | AMFI Registered Mutual Fund
 <h3>Head Office</h3>
 <p>KINZEN FORTUNES LLP<br>
 A 904, Eva, Bavdhan,<br>
-Pune 411021, Maharashtra, India.<br><br>
-Phone: +91 9579317587, +91 8411891281<br>
+Pune 411021, Maharashtra, India<br>
 Email: info@kinzenfortunes.com</p>
 </div>
 </div>
@@ -144,20 +139,40 @@ Email: info@kinzenfortunes.com</p>
 
 <footer>
 <div class="container">
-<p>KINZEN FORTUNES LLP acts as a distributor / intermediary for financial products, including mutual funds as an AMFI Registered Mutual Fund Distributor (ARN-355051). Investments in securities and mutual funds are subject to market risks. Investors should read all scheme related documents carefully before investing. Past performance is not indicative of future results. No guaranteed returns are offered.</p>
+<p>KINZEN FORTUNES LLP acts as a distributor. Mutual fund investments are subject to market risks. Read all documents carefully before investing.</p>
 </div>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919579317587">WhatsApp</a>
 
 <script>
-function calc(){
-let p=amount.value;
-let r=rate.value/100/12;
-let n=years.value*12;
-let fv=p*((Math.pow(1+r,n)-1)/r)*(1+r);
-result.innerHTML="Future Value: ₹"+Math.round(fv);
+const symbols = [
+"^NSEI","^BSESN","^NSEBANK",
+"RELIANCE.NS","TCS.NS","HDFCBANK.NS","INFY.NS","ICICIBANK.NS",
+"ITC.NS","LT.NS","SBIN.NS","BHARTIARTL.NS","KOTAKBANK.NS"
+];
+
+async function fetchMarket(){
+try{
+let res = await fetch(`https://query1.finance.yahoo.com/v7/finance/quote?symbols=${symbols.join(',')}`);
+let data = await res.json();
+let quotes = data.quoteResponse.result;
+
+let html = "";
+quotes.forEach(q=>{
+let changePercent = q.regularMarketChangePercent.toFixed(2);
+let cls = changePercent >= 0 ? 'green' : 'red';
+html += `<span class="${cls}">${q.shortName || q.symbol}: ${q.regularMarketPrice} (${changePercent}%)</span>`;
+});
+
+document.getElementById("marketData").innerHTML = html;
+}catch(e){
+document.getElementById("marketData").innerHTML = "Error loading data";
 }
+}
+
+setInterval(fetchMarket,10000);
+fetchMarket();
 
 function send(){
 let name=name.value;
